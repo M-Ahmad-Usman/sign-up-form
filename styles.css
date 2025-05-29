@@ -42,3 +42,119 @@ p {
 h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
 }
+
+body {
+	display: grid;
+	grid-template-columns: 1fr min(1200px, 100%) 1fr;
+	min-height: 100vh;
+	align-content: center;
+}
+
+body > * {
+	grid-column: 2;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: min(350px, 30%) 1fr;
+	grid-template-areas: 'img-sidebar main';
+
+	padding: 10px;
+	height: auto;
+}
+
+.img-sidebar {
+	grid-area: img-sidebar;
+	background-image: url(assets/form_cover_photo.jpg);
+	background-size: cover;
+
+	position: relative;
+}
+
+.img-overlay {
+	background-color: rgba(0, 0, 0, 0.4);
+	height: 120px;
+	width: 100%;
+	position: absolute;
+	top: 20%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.img-overlay > #logo-img {
+	max-height: 100%;
+}
+
+.img-overlay > #logo-text {
+	color: white;
+	font-size: 3rem;
+}
+
+form {
+	grid-area: main;
+	
+	background-color: rgb(240, 240, 240);
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.form-intro, .form-fields, .form-footer {
+	padding: 1rem 1rem 1rem 2rem;
+	flex-basis: 200px;
+}
+
+.form-intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.form-fields {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	background-color: white;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.username-input, .email-phone-input, .password-input {
+	display: flex;
+	gap: 2rem;
+}
+
+input {
+	width: min(300px, 25vw);
+	min-width: 250px;
+	max-height: 35px;
+	padding: 0.5rem;
+}
+
+.form-footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 0.75rem;
+}
+
+#create-account-btn {
+	padding: 10px 25px;
+	border-radius: 5px;
+	border: none;
+	background-color: #596D48;
+	color: white;
+	cursor: pointer;
+	width: fit-content;
+}
+
+a {
+	color: #596D48;
+	text-decoration: none;
+}
+
+p, span, input, label {
+	font-size: clamp(1rem, 0.75rem + 0.5vw, 2rem);
+}
