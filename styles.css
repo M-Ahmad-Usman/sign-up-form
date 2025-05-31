@@ -163,8 +163,8 @@ p, input {
 	font-size: clamp(1rem, 0.75rem + 0.5vw, 2rem);
 }
 
-label, span {
-	font-size: clamp(0.9rem, 0.6rem + 0.5vw, 1.2rem);
+label {
+	font-size: clamp(1rem, 0.6rem + 0.5vw, 1.4rem);
 }
 
 .error-message {
