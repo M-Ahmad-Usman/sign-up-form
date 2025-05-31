@@ -130,6 +130,9 @@ form {
 
 .username-input > div, .email-phone-input > div, .password-input > div {
 	flex: 1;
+
+	display: flex;
+	flex-direction: column;
 }
 
 input {
