@@ -174,3 +174,7 @@ label {
 	font-size: calc(1em - 2px);
 	visibility: hidden;
 }
+
+input[class="show-error"] + span {
+	visibility: visible;
+}
