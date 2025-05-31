@@ -116,7 +116,7 @@ form {
 .form-fields {
 	display: flex;
 	flex-direction: column;
-	gap: 10px;
+	gap: 5px;
 	background-color: white;
 	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
 }
@@ -157,4 +157,14 @@ a {
 
 p, input {
 	font-size: clamp(1rem, 0.75rem + 0.5vw, 2rem);
+}
+
+label, span {
+	font-size: clamp(0.9rem, 0.6rem + 0.5vw, 1.2rem);
+}
+
+.error-message {
+	color: rgb(219, 10, 10);
+	font-size: calc(1em - 2px);
+	visibility: hidden;
 }
