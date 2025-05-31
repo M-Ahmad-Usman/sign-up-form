@@ -43,6 +43,8 @@ h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
 }
 
+/* My Styles */
+
 body {
 	display: grid;
 	grid-template-columns: 1fr min(1200px, 100%) 1fr;
