@@ -27,8 +27,8 @@
                 <h2>Let's do this!</h2>
                 <div class="username-input">
                     <div class="fname">
-                        <label for="fname">First Name</label>
-                        <input type="text" name="fname" id="fname" pattern="\w{2,}" placeholder="Muhammad">
+                        <label for="fname">First Name <span aria-label="required">*</span></label>
+                        <input type="text" name="fname" id="fname" pattern="\w{2,}" required placeholder="Muhammad">
                         <span class="error-message">&#9432; Must be atleast 2 characters long.</span>
                     </div>
                     <div class="lname">
@@ -39,8 +39,8 @@
                 </div>
                 <div class="email-phone-input">
                     <div class="email">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="ahmad@gmail.com">
+                        <label for="email">Email <span aria-label="required">*</span></label>
+                        <input type="email" name="email" id="email" required placeholder="ahmad@gmail.com">
                         <span class="error-message">&#9432; Invalid Email address.</span>
                     </div>
                     <div class="phone-no">
@@ -51,13 +51,13 @@
                 </div>
                 <div class="password-input">
                     <div class="password">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password" pattern="\d{8,}" placeholder="Minimum 8 characters">
+                        <label for="password">Password <span aria-label="required">*</span></label>
+                        <input type="password" name="password" id="password" pattern="\d{8,}" required placeholder="Minimum 8 characters">
                         <span class="error-message">&#9432; Password must contain atleast 8 characters.</span>
                     </div>
                     <div class="confirm-password">
-                        <label for="confirm-password">Confirm Password</label>
-                        <input type="password" name="confirm-password" id="confirm-password" placeholder="Retype your password">
+                        <label for="confirm-password">Confirm Password <span aria-label="required">*</span></label>
+                        <input type="password" name="confirm-password" id="confirm-password" required placeholder="Retype your password">
                         <span class="error-message">&#9432; Given Passwords don't match.</span>
                     </div>
                 </div>
