@@ -15,7 +15,7 @@ function matchPasswords (pswd1Element, pswd2Element) {
 }
 
 function validateInput(element) {
-    if (! element instanceof HTMLInputElement) {
+    if (!(element instanceof HTMLInputElement)) {
         return TypeError;
     }
 
