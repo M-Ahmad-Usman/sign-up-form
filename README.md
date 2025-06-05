@@ -1,27 +1,28 @@
 # Sign-up Form
 
-This project is a solution to the [Sign-up Form assignment](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form) from [The Odin Project](https://www.theodinproject.com/). It demonstrates intermediate HTML, CSS, and JavaScript skills by building a visually appealing and interactive sign-up form for an imaginary service.
+This project is a solution to the [Sign-up Form assignment](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form) from [The Odin Project](https://www.theodinproject.com/). It demonstrates HTML and CSS skills by building a fully responsive sign-up form with client-side validation.
 
 ## Features
 
-- **Custom Layout:** Two-column design with a sidebar featuring a background image, Odin logo, and custom Norse Bold font for the logo.
-- **Form Validation:**
-  - HTML5 validation for required fields, email, phone, and password patterns.
-  - Real-time error messages for invalid input and password mismatch.
-  - Prevents form submission if passwords do not match.
-- **Styling:**
-  - Modern, accessible, and semantic HTML structure.
-  - Clean, organized CSS with a custom reset and responsive font sizes.
-  - Styled form inputs with focus, error, and invalid state styles.
-  - Button and link styles matching the assignment design.
-- **Assets:**
-  - Background image, Odin logo, and Norse Bold font included in the `assets/` folder.
+- Responsive layout using CSS Grid and Flexbox
+- Modern CSS features including `clamp()` for fluid typography
+- Custom styling with Josh Comeau's CSS Reset
+- Interactive form validation:
+  - Real-time validation feedback with error messages
+  - Custom validation patterns for:
+    - Names (minimum 2 characters)
+    - Phone number (format: xxxx-xxxxxxx)
+    - Password (minimum 8 characters)
+    - Password matching validation using JavaScript
+- Semi-transparent overlay with logo on the sidebar image
+- Accessible form with required field indicators
+- Mobile-first design with breakpoints at 960px and 580px
 
-## Live Preview
+## Preview
 
-![Form Design Preview](assets/desktop_preview.png)
+![Desktop Preview](assets/desktop_preview.png)
 
-## Usage
+## Getting Started
 
 1. **Clone the repository:**
    ```bash
@@ -32,33 +33,49 @@ This project is a solution to the [Sign-up Form assignment](https://www.theodinp
 
 No build steps or dependencies are required.
 
-## File Structure
+## Project Structure
 
-- `index.html` – Main HTML file with the form and layout.
-- `styles.css` – All styles, including layout, fonts, and form validation states.
-- `script.js` – Handles real-time validation and password matching.
-- `assets/` – Contains images and fonts used in the project.
+```
+sign-up-form/
+│
+├── index.html          # Main HTML structure
+├── styles.css          # CSS styles including responsive design
+├── script.js          # Form validation JavaScript
+│
+└── assets/
+    ├── desktop_preview.png
+    ├── form_cover_photo.jpg
+    ├── Norse-Bold.otf
+    └── odin_logo.png
+```
 
-## Form Details
+## Technical Details
 
-- **Fields:** First Name, Last Name, Email, Phone Number, Password, Confirm Password
-- **Validation:**
-  - First/Last Name: At least 2 characters
-  - Email: Must be a valid email address
-  - Phone: Optional, format `xxxx-xxxxxxx`
-  - Password: At least 8 characters
-  - Confirm Password: Must match Password
-- **Error Handling:**
-  - Error messages shown for invalid fields and password mismatch
-  - Passwords must match to submit the form
+### CSS Features
+- CSS Grid for page layout
+- Flexbox for form components
+- Fluid typography using `clamp()`
+- Custom form validation styles
+- Mobile responsive breakpoints
+- Semi-transparent overlay implementation
 
-## Assets & Credits
+### JavaScript Features
+- Real-time input validation
+- Custom password matching validation
+- Error message visibility toggling
+- Form submission handling
 
+### Responsive Design
+- Desktop-first with mobile breakpoints:
+  - < 960px: Stack layout for smaller screens
+  - < 580px: Single column form fields
+
+## Credits
+
+- **CSS Reset:** [Josh Comeau's Custom CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/)
 - **Background Image:** [Unsplash - Halie West](https://unsplash.com/photos/25xggax4bSA)
 - **Logo Font:** [Norse Bold](https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf)
 - **Odin Logo:** [The Odin Project](https://www.theodinproject.com/)
-
-For more details, see the [assignment page](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form).
 
 ## License
 
