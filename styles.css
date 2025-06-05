@@ -187,3 +187,24 @@ input.show-error + .error-message {
 span[aria-label="required"] {
 	font-size: 0.8rem;
 }
+
+/* Mobile Layout */
+
+@media screen and (max-width: 960px) {
+	.container {
+		grid-template-columns: 1fr;
+		grid-template-rows: 300px 1fr;
+	}
+
+	.img-overlay {
+		background-color: rgba(0, 0, 0, 0);
+	}
+}
+
+@media screen and (max-width: 580px) {
+	.username-input, .email-phone-input, .password-input {
+		flex-direction: column;
+		gap: 0.25rem;
+	}
+	
+}
