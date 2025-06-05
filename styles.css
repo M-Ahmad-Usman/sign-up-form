@@ -184,6 +184,6 @@ label {
 	visibility: hidden;
 }
 
-input[class="show-error"] + span {
+input.show-error + .error-message {
 	visibility: visible;
 }
