@@ -64,14 +64,12 @@ body > * {
 .container {
 	display: grid;
 	grid-template-columns: min(350px, 30%) 1fr;
-	grid-template-areas: 'img-sidebar main';
 
 	padding: 10px;
 	height: auto;
 }
 
 .img-sidebar {
-	grid-area: img-sidebar;
 	background-image: url(assets/form_cover_photo.jpg);
 	background-size: cover;
 
@@ -101,8 +99,6 @@ body > * {
 }
 
 form {
-	grid-area: main;
-	
 	background-color: rgb(240, 240, 240);
 	
 	display: flex;
