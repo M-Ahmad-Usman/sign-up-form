@@ -187,3 +187,7 @@ label {
 input.show-error + .error-message {
 	visibility: visible;
 }
+
+span[aria-label="required"] {
+	font-size: 0.8rem;
+}
